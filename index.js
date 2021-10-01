@@ -6,6 +6,8 @@ import { typeDefs } from "./typeDefs";
 
 var admin = require("firebase-admin");
 
+
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "",
