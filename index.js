@@ -7,10 +7,12 @@ import { typeDefs } from "./typeDefs";
 
 var admin = require("firebase-admin");
 
+//firebase initialization
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "",
 });
+
 
 const startServer = async () => {
   const app = express();
