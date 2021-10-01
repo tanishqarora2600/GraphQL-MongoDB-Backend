@@ -29,6 +29,8 @@ const startServer = async () => {
   server.applyMiddleware({
     app,
   });
+  
+  
   try {
     await mongoose.connect(
       "",
