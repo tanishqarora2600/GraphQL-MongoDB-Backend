@@ -38,6 +38,7 @@ export const typeDefs = gql`
     getCourses(
       pageNumber: Int!
       limit: Int!
+      college:hi!
       collegeId: String
     ): coursesWithPageNumber!
     getBranches(
