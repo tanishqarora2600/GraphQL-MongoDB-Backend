@@ -1,3 +1,4 @@
+
 import express from "express";
 import mongoose from "mongoose";
 import { ApolloServer, gql } from "apollo-server-express";
@@ -46,6 +47,7 @@ const startServer = async () => {
   const PORT = process.env.PORT || 4000;
   app.listen(PORT, () => {
     console.log("connected");
+    console.log("server running on port no 4000");
   });
 };
 
