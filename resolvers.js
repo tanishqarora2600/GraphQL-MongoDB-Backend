@@ -1,7 +1,7 @@
 import { User } from "./models/user";
 import { College } from "./models/colleges";
 import { University } from "./models/university";
-import { Course } from "./models/courses";
+import { Course } from "./models/universty";
 import { Branch } from "./models/branches";
 const ObjectId = mongoose.Types.ObjectId;
 import mongoose, { models } from "mongoose";
@@ -123,7 +123,7 @@ export const resolvers = {
             },
           },
           {
-            $unwind: "$courses",
+            $unwind: "$branches",
           },
 
           {
