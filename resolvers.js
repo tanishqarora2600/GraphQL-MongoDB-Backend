@@ -73,7 +73,7 @@ export const resolvers = {
 
         {
           $sort: {
-            "college.collegeName": 1,
+            "college.collegeName": 5,
           },
         },
         {
