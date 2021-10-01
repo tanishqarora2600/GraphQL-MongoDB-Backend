@@ -6,13 +6,10 @@ import { typeDefs } from "./typeDefs";
 
 var admin = require("firebase-admin");
 
-var serviceAccount = require("./firebase-key.json");
-
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "",
 });
-const isAuth = require("./middleware/isAuthenticated");
 
 const startServer = async () => {
   const app = express();
