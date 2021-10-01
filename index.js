@@ -26,7 +26,7 @@ const startServer = async () => {
     playground: true,
     introspection: true,
   });
-
+//server middleware
   server.applyMiddleware({
     app,
   });
